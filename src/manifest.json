@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "1fichier-extender",
+  "description": "Facilite l'utilisation de 1fichier",
+  "version": "1.0.0",
+  "icons": {
+    "48": "./common/assets/images/icon48.png",
+    "128": "./common/assets/images/icon128.png"
+  },
+  "background": {
+    "service_worker": "./background.js"
+  },
+  "action": {
+    "permissions": ["tabs", "activeTab"],
+    "default_popup": "./pages/popup/index.html"
+  },
+  "content_scripts": [
+    {
+      "js": ["./content.js"],
+      "matches": ["https://*/*", "http://*/*"],
+      "run_at": "document_end"
+    }
+  ]
+}
