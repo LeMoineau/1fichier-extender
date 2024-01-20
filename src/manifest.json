@@ -4,8 +4,8 @@
   "description": "Facilite l'utilisation de 1fichier",
   "version": "1.0.0",
   "icons": {
-    "48": "./common/assets/images/icon48.png",
-    "128": "./common/assets/images/icon128.png"
+    "48": "./common/assets/images/icon.png",
+    "128": "./common/assets/images/icon.png"
   },
   "background": {
     "service_worker": "./background.js"
